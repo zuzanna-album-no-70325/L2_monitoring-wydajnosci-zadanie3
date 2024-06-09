@@ -1,0 +1,20 @@
+﻿<Window x:Class="zadanie_3_zuzanna_lukiewska.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Monitoring systemowy" Height="200" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="cpuLabel" Grid.Row="0" Content="Użycie CPU: " FontSize="13"/>
+        <Label x:Name="ramLabel" Grid.Row="1" Content="Dostępny RAM: " FontSize="13"/>
+        <Label x:Name="diskLabel" Grid.Row="2" Content="Użycie dysku: " FontSize="13"/>
+        <Label x:Name="threadLabel" Grid.Row="3" Content="Thread Count: " FontSize="13"/>
+    </Grid>
+</Window>
